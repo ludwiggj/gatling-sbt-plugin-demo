@@ -61,12 +61,8 @@ Using with "Load Testing with Gatling, The COMPLETE Guide"
 This project can be used to write and run the simulation examples given in the excellent online Gatling tutorial,
 [Load Testing with Gatling, The COMPLETE Guide](https://www.james-willett.com/gatling-load-testing-complete-guide).
 
-When you're asked to download the [application under test](https://www.james-willett.com/gatling-load-testing-complete-guide/#4-the-application-under-test---the-video-game-db),
-that repo is slightly broken, in that trying the `GET /videogames` endpoint from Swagger fails. I've forked it and fixed
-it, so clone it from [my repo](https://github.com/ludwiggj/VideoGameDB), and then check out the
-`graeme-gatling-start-point` branch.
-
-Once you've started the video game db app, you should be able to run the `simulations.videogame.MyFirstTest` simulation
-in this project and see it pass. Once that's working, you're in good shape to start working through James' tutorial.
+Once you've downloaded the [application under test](https://www.james-willett.com/gatling-load-testing-complete-guide/#4-the-application-under-test---the-video-game-db),
+and started the video game db app, you should be able to run the `simulations.videogame.MyFirstTest` simulation in this
+project and see it pass. Once that's working, you're in good shape to start working through the rest of James' tutorial.
 
 END.
