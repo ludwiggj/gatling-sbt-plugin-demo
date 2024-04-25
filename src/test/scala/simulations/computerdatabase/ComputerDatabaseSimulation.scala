@@ -1,4 +1,4 @@
-package computerdatabase
+package simulations.computerdatabase
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
@@ -51,10 +51,10 @@ class ComputerDatabaseSimulation extends Simulation {
       pause(1),
       http("Post")
         .post("/computers")
-        .formParam("name", "Beautiful Computer")
-        .formParam("introduced", "2012-05-30")
-        .formParam("discontinued", "")
-        .formParam("company", "37")
+        .formParam("name", _ => "Beautiful Computer")
+        .formParam("introduced", _ => "2012-05-30")
+        .formParam("discontinued", _ => "")
+        .formParam("company", _ => "37")
         .check(
           status.is { session =>
             // we do a check on a condition that's been customized with
